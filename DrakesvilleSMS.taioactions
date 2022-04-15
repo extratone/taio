@@ -1,0 +1,38 @@
+{
+  "actions" : [
+    {
+      "type" : "@share.compose-message",
+      "parameters" : {
+        "body" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.full-text"
+            }
+          ]
+        },
+        "recipients" : {
+          "value" : "drakesville@icloud.com"
+        }
+      }
+    },
+    {
+      "type" : "@ui.confirm",
+      "parameters" : {
+        "text" : {
+          "value" : "PEE"
+        }
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Drakesville SMS",
+  "clientMinVersion" : 1,
+  "summary" : "",
+  "icon" : {
+    "glyph" : "ladybug.fill",
+    "color" : "#60C172"
+  },
+  "clientVersion" : 746
+}
