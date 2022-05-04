@@ -1,5 +1,18 @@
-![Cute Git](https://user-images.githubusercontent.com/43663476/117531764-d6064100-afa9-11eb-9e09-783e189abe8e.gif)
+![Taio Press Banner](https://gitlab.com/DavidBlue/taio/uploads/937724e07126d454d293d92a405cd587/B6A04BDB-F2E4-45B6-965B-5951FFD49E27.PNG)
 
-# David Blue's GitHub Repository Template
+# David Blue's Taio Configs
 
-Howdy! I'm new to all of this and yet I've already grown quite tired of things like Labels not being set up the way I prefer, so I created this template for myself. It is very much a work in progress. I've left it public just in case it'd be of use to anyone else, and I hope it is! If there's any way I can catalyze that, please do reach out!
+This is my repository for [Taio](https://apps.apple.com/us/app/taio-markdown-text-actions/id1527036273) - a markdown-based, scriptable text editor on iOS. 
+
+Please feel free to use/distribute anything in here - including original content - as per the terms of "[The Unlicense, Dave Edition](https://github.com/extratone/drafts/blob/main/LICENSE.md)."
+
+### Contact
+
+* [Contact Card](https://davidblue.wtf/db.vcf)
+* [Telegram](https://t.me/extratone)
+* [Email](mailto:davidblue@extratone.com) 
+* [Twitter](https://twitter.com/NeoYokel)
+* [Mastodon](https://mastodon.social/@DavidBlue)
+* [Discord](https://discord.gg/0b9KQUKP858b0iZF)
+* [*Everywhere*](https://raindrop.io/davidblue/social-directory-21059174)...
+
