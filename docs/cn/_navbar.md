@@ -1,0 +1,2 @@
+- [最近更新](cn/whatsnew.md)
+- [EN / **CN**](/)
