@@ -8,6 +8,22 @@ Please feel free to use/distribute anything in here - including original content
 
 ---
 
+## Action Directory Contributions
+
+### [Write.as Collection Post](https://actions.taio.app/#/service?id=writeas-collection-post)
+
+- [**Action Directory Page**](https://actions.taio.app/#/service?id=writeas-collection-post)
+- [GitHub Issue](https://github.com/extratone/taio/issues/5)
+- [Source-JSON](https://github.com/extratone/taio/blob/main/actions/WriteasCollectionPost.json)
+- [Source-taioactions](https://github.com/extratone/taio/blob/main/actions/WriteasCollectionPost.taioactions)
+- [Write.as API Documentation](https://developers.write.as/docs/api/#publish-a-collection-post)
+
+![Action Steps](https://github.com/extratone/taio/blob/main/images/22BF7895-8D95-48B4-BE41-A4A1B43E9EC8.png?raw=true)
+
+Post to a [Write.as](https://write.as/join/4bqc8482) blog (“[collection](https://developers.write.as/docs/api/#publish-a-collection-post)" and copy the URL of the result to the clipboard. (Set your auth token and collection slug manually before running.)
+
+---
+
 ## Keyboard Shortcuts
 
 **Navigation**
