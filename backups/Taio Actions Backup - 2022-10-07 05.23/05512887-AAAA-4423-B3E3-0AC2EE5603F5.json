@@ -1,0 +1,41 @@
+{
+  "actions" : [
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "Generate a notes file for today under the current folder."
+        }
+      }
+    },
+    {
+      "type" : "@editor.new",
+      "parameters" : {
+        "location" : 0,
+        "openInEditor" : true,
+        "filename" : {
+          "value" : "$.md",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@date.format(yyyy-MM-dd)"
+            }
+          ]
+        },
+        "text" : {
+          "value" : ""
+        },
+        "overwriteIfExists" : false
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Daily Notes",
+  "clientMinVersion" : 1,
+  "summary" : "",
+  "icon" : {
+    "glyph" : "calendar",
+    "color" : "#FB6666"
+  },
+  "clientVersion" : 1046
+}

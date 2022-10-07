@@ -1,0 +1,60 @@
+{
+  "actions" : [
+    {
+      "type" : "@editor.selected-text",
+      "parameters" : {
+        "fallback" : 1
+      }
+    },
+    {
+      "type" : "@util.request",
+      "parameters" : {
+        "body" : {
+          "value" : ""
+        },
+        "url" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        },
+        "method" : 0,
+        "headers" : {
+          "value" : "{\n  \"Content-Type\": \"application\/json\"\n}"
+        }
+      }
+    },
+    {
+      "type" : "@editor.new",
+      "parameters" : {
+        "location" : 0,
+        "openInEditor" : true,
+        "filename" : {
+          "value" : ""
+        },
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        },
+        "overwriteIfExists" : true
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Download Selected URL File",
+  "clientMinVersion" : 1,
+  "summary" : "",
+  "icon" : {
+    "glyph" : "square.and.arrow.down",
+    "color" : "#60C172"
+  },
+  "clientVersion" : 1024
+}

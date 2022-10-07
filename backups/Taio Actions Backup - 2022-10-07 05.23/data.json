@@ -1,0 +1,491 @@
+{
+  "builtinFolders" : [
+    {
+      "files" : [
+        {
+          "uuid" : "37CB36EF-9896-4805-B34F-088BE7EF99C1",
+          "name" : "Editor Brightness",
+          "icon" : {
+            "glyph" : "lightbulb",
+            "color" : "#3FA1F8"
+          }
+        },
+        {
+          "uuid" : "801C34C4-CF15-4268-85AC-8FF76BAF2CE0",
+          "name" : "Capture with Bear",
+          "icon" : {
+            "glyph" : "square.and.arrow.down.fill",
+            "color" : "#FB6666"
+          }
+        },
+        {
+          "uuid" : "E9AD7624-2F88-4CB2-A9B1-2557174D2C29",
+          "name" : "Text Recognition",
+          "icon" : {
+            "glyph" : "doc.text.viewfinder",
+            "color" : "#A777FF"
+          }
+        },
+        {
+          "uuid" : "0CA49E83-462A-4616-95BE-3B06CBA4BDD6",
+          "name" : "Wi-Fi Transfer",
+          "icon" : {
+            "glyph" : "wifi",
+            "color" : "#10ADC0"
+          }
+        },
+        {
+          "uuid" : "849DF362-EA4B-4B8C-993D-37DB88FCE682",
+          "name" : "Install Font",
+          "icon" : {
+            "glyph" : "textformat",
+            "color" : "#3FA1F8"
+          }
+        }
+      ],
+      "type" : "@default",
+      "name" : "All Actions",
+      "icon" : "rectangle.grid.2x2"
+    },
+    {
+      "files" : [
+        {
+          "uuid" : "D71EF9C4-5EE3-4785-933B-0D53EC8216DC",
+          "name" : "Snippet",
+          "icon" : {
+            "glyph" : "scissors.badge.ellipsis",
+            "color" : "#60C172"
+          }
+        },
+        {
+          "uuid" : "36741B2D-511E-432D-959D-B3626582A814",
+          "name" : "Remove Extra Spaces",
+          "icon" : {
+            "glyph" : "wand.and.stars",
+            "color" : "#FE824B"
+          }
+        },
+        {
+          "uuid" : "06142C3B-E38B-46A7-8ECA-4505D12784F6",
+          "name" : "Text Tokenization",
+          "icon" : {
+            "glyph" : "doc.text.magnifyingglass",
+            "color" : "#3FA1F8"
+          }
+        },
+        {
+          "uuid" : "4905DCDD-7D59-4EE5-81A5-87BEEC990672",
+          "name" : "Quote",
+          "icon" : {
+            "glyph" : "quote.bubble",
+            "color" : "#FFB000"
+          }
+        },
+        {
+          "uuid" : "1C002674-BF9F-48DB-BD71-5399024E87AE",
+          "name" : "Extract Content",
+          "icon" : {
+            "glyph" : "scissors",
+            "color" : "#10ADC0"
+          }
+        },
+        {
+          "uuid" : "D74D70EE-AD8E-4168-A8C4-F281038D4989",
+          "name" : "DeepL Translate",
+          "icon" : {
+            "glyph" : "person.2",
+            "color" : "#60C172"
+          }
+        },
+        {
+          "uuid" : "AEAA9D57-FAD9-4B3C-AB90-ABC340FA331D",
+          "name" : "Merge Clippings",
+          "icon" : {
+            "glyph" : "list.bullet",
+            "color" : "#7881FA"
+          }
+        }
+      ],
+      "type" : "@clips",
+      "name" : "Clips",
+      "icon" : "doc.plaintext"
+    },
+    {
+      "files" : [
+        {
+          "uuid" : "EAAAEDA4-36A1-4D19-BF7B-E3CEEE66113B",
+          "name" : "Copy Document Text",
+          "icon" : {
+            "glyph" : "wand.and.stars",
+            "color" : "#60C172"
+          }
+        },
+        {
+          "uuid" : "2100106C-25B8-4351-8348-1E51AE1E10A5",
+          "name" : "Drakesville SMS",
+          "icon" : {
+            "glyph" : "ladybug.fill",
+            "color" : "#60C172"
+          }
+        },
+        {
+          "uuid" : "EF21A09C-9C03-44C9-A01B-38CAD66C18C3",
+          "name" : "Telegram Saved Messages",
+          "icon" : {
+            "glyph" : "arrow.up.message",
+            "color" : "#10ADC0"
+          }
+        },
+        {
+          "uuid" : "91D41E91-D280-4F8A-B905-E9785C8FB3AB",
+          "name" : "Tweetbot Selection",
+          "icon" : {
+            "glyph" : "network",
+            "color" : "#3FA1F8"
+          }
+        },
+        {
+          "uuid" : "886D80E7-26DE-48E6-A8C4-EF343C7E0B3A",
+          "name" : "Clear Clipboard",
+          "icon" : {
+            "glyph" : "arrow.triangle.2.circlepath.doc.on.clipboard",
+            "color" : "#60C172"
+          }
+        },
+        {
+          "uuid" : "EB82A449-097D-4C9D-8FDA-DD332CB06918",
+          "name" : "Editor Brightness",
+          "icon" : {
+            "glyph" : "lightbulb",
+            "color" : "#3FA1F8"
+          }
+        },
+        {
+          "uuid" : "C54C0C68-B9B5-4B1F-B46F-42A260E14880",
+          "name" : "Markdeep Preview",
+          "icon" : {
+            "glyph" : "pencil.tip",
+            "color" : "#3FA1F8"
+          }
+        },
+        {
+          "uuid" : "1FE963D2-9A19-4FC0-B27A-7E868DAB3AE5",
+          "name" : "Image Uploader",
+          "icon" : {
+            "glyph" : "icloud.and.arrow.up",
+            "color" : "#7881FA"
+          }
+        },
+        {
+          "uuid" : "D050113E-7186-4251-B696-171D6247F79F",
+          "name" : "Write.as Collection Post",
+          "icon" : {
+            "glyph" : "doc.append.fill",
+            "color" : "#60C172"
+          }
+        },
+        {
+          "uuid" : "34F3E0FE-7675-4A18-871C-57C7FF36EB37",
+          "name" : "Write.as Collection Post 2",
+          "icon" : {
+            "glyph" : "doc.append.fill",
+            "color" : "#60C172"
+          }
+        },
+        {
+          "uuid" : "C2F42CCD-3024-4DFB-959B-9324D0CC699F",
+          "name" : "Beautify",
+          "icon" : {
+            "glyph" : "wand.and.stars",
+            "color" : "#FE824B"
+          }
+        },
+        {
+          "uuid" : "395B3EE5-9C60-44CF-8CA4-4FDBA760FF8A",
+          "name" : "Custom Preview",
+          "icon" : {
+            "glyph" : "eye",
+            "color" : "#7881FA"
+          }
+        },
+        {
+          "uuid" : "7F18192B-DFEA-456C-A003-56A5D7D11182",
+          "name" : "Lines View",
+          "icon" : {
+            "glyph" : "list.bullet.below.rectangle",
+            "color" : "#10ADC0"
+          }
+        },
+        {
+          "uuid" : "CAB99F62-F6C8-40D7-A94D-3D186A71F4D3",
+          "name" : "Text Case",
+          "icon" : {
+            "glyph" : "textformat",
+            "color" : "#A777FF"
+          }
+        },
+        {
+          "uuid" : "2F1E78FC-7488-4A48-AD2C-96AF97D7BE70",
+          "name" : "Search & Replace",
+          "icon" : {
+            "glyph" : "magnifyingglass.circle",
+            "color" : "#60C172"
+          }
+        },
+        {
+          "uuid" : "2D1B1A4D-9AE7-45B5-A989-9286DCDE99CB",
+          "name" : "Content Helper",
+          "icon" : {
+            "glyph" : "person",
+            "color" : "#10ADC0"
+          }
+        }
+      ],
+      "type" : "@editor",
+      "name" : "Editor",
+      "icon" : "selection.pin.in.out"
+    },
+    {
+      "files" : [
+        {
+          "uuid" : "BCEAB18B-0305-44A8-B020-D794F6466FC6",
+          "name" : "Docusaurus",
+          "icon" : {
+            "glyph" : "arrow.up.doc",
+            "color" : "#60C172"
+          }
+        },
+        {
+          "uuid" : "53B7812A-4C9B-4CC4-A2D3-095A0FA237C4",
+          "name" : "Dev",
+          "icon" : {
+            "glyph" : "book.circle.fill",
+            "color" : "#F366BE"
+          }
+        },
+        {
+          "uuid" : "05512887-AAAA-4423-B3E3-0AC2EE5603F5",
+          "name" : "Daily Notes",
+          "icon" : {
+            "glyph" : "calendar",
+            "color" : "#FB6666"
+          }
+        },
+        {
+          "uuid" : "534CD7F4-7CC4-48E9-9440-C8C5EB1141C2",
+          "name" : "My Todo List",
+          "icon" : {
+            "glyph" : "list.bullet.rectangle",
+            "color" : "#FFB000"
+          }
+        },
+        {
+          "uuid" : "DEC66917-5AB8-4924-96BD-674BAE59C981",
+          "name" : "Untitled.txt",
+          "icon" : {
+            "glyph" : "doc.plaintext",
+            "color" : "#A777FF"
+          }
+        }
+      ],
+      "type" : "@file-templates",
+      "name" : "File Templates",
+      "icon" : "doc.richtext"
+    }
+  ],
+  "customFolders" : [
+    {
+      "files" : [
+
+      ],
+      "name" : "Example Folder",
+      "icon" : "folder"
+    },
+    {
+      "files" : [
+        {
+          "uuid" : "6002BB96-81FC-41A4-A1DA-9B15CC90D197",
+          "name" : "List Headings",
+          "icon" : {
+            "glyph" : "list.bullet.indent",
+            "color" : "#FFB000"
+          }
+        },
+        {
+          "uuid" : "4C5157EB-963D-4518-8D97-C908431E22AB",
+          "name" : "Add Footnote",
+          "icon" : {
+            "glyph" : "chevron.compact.down",
+            "color" : "#FE824B"
+          }
+        },
+        {
+          "uuid" : "1531F230-45F0-4CE6-8FC7-8276F8DC023F",
+          "name" : "Open Links",
+          "icon" : {
+            "glyph" : "list.star",
+            "color" : "#3FA1F8"
+          }
+        },
+        {
+          "uuid" : "9CE1CEEA-B7E0-42A8-A9ED-EBEA2F2999DF",
+          "name" : "Add Link",
+          "icon" : {
+            "glyph" : "link.badge.plus",
+            "color" : "#10ADC0"
+          }
+        },
+        {
+          "uuid" : "32456C29-6E0C-49FA-9060-3C93F08F3A85",
+          "name" : "Count Words",
+          "icon" : {
+            "glyph" : "textformat.123",
+            "color" : "#E09971"
+          }
+        },
+        {
+          "uuid" : "C602E19F-6076-4543-BFD4-3591231410E0",
+          "name" : "Insert Image Link",
+          "icon" : {
+            "glyph" : "text.below.photo",
+            "color" : "#7881FA"
+          }
+        },
+        {
+          "uuid" : "FBA4ADCE-1FC0-4137-89FD-4F89EC4A6DB9",
+          "name" : "Lookup Footnote",
+          "icon" : {
+            "glyph" : "quote.bubble",
+            "color" : "#7881FA"
+          }
+        }
+      ],
+      "name" : "MacStories",
+      "icon" : "macpro.gen1"
+    },
+    {
+      "files" : [
+        {
+          "uuid" : "94AA405F-8202-4C01-8735-1D9F978083D7",
+          "name" : "MindMap",
+          "icon" : {
+            "glyph" : "list.bullet.indent",
+            "color" : "#FB6666"
+          }
+        },
+        {
+          "uuid" : "78034BB8-76CC-44A6-878E-90888C4CEA5F",
+          "name" : "Checklists",
+          "icon" : {
+            "glyph" : "list.bullet",
+            "color" : "#FFB000"
+          }
+        },
+        {
+          "uuid" : "DACACCBC-CC27-4302-A6C9-34C010A5A5EA",
+          "name" : "Search Selected",
+          "icon" : {
+            "glyph" : "selection.pin.in.out",
+            "color" : "#FB6666"
+          }
+        },
+        {
+          "uuid" : "C94C52DA-7CF1-42F2-A7BC-5A5A139C5418",
+          "name" : "GitHub Markdown",
+          "icon" : {
+            "glyph" : "globe",
+            "color" : "#7881FA"
+          }
+        },
+        {
+          "uuid" : "AFE0343D-2D47-4E0B-9B05-1ED2FA4AD66D",
+          "name" : "Markdown Lint",
+          "icon" : {
+            "glyph" : "textformat.abc.dottedunderline",
+            "color" : "#F366BE"
+          }
+        },
+        {
+          "uuid" : "53847404-8439-4007-8650-DC03E41BE369",
+          "name" : "List Headings",
+          "icon" : {
+            "glyph" : "list.bullet.indent",
+            "color" : "#FFB000"
+          }
+        }
+      ],
+      "name" : "Aside",
+      "icon" : "australsign.square.fill"
+    },
+    {
+      "files" : [
+        {
+          "uuid" : "A588AA88-9BAD-441B-B3CA-8F034E376FE3",
+          "name" : "Install Font",
+          "icon" : {
+            "glyph" : "textformat",
+            "color" : "#3FA1F8"
+          }
+        },
+        {
+          "uuid" : "6E1D5D68-0DFA-4B71-99C0-66A0F57130DC",
+          "name" : "Universal Search",
+          "icon" : {
+            "glyph" : "magnifyingglass",
+            "color" : "#E09971"
+          }
+        },
+        {
+          "uuid" : "83E3E67C-223B-4F3E-B10D-900CF67A0658",
+          "name" : "Download Selected URL File",
+          "icon" : {
+            "glyph" : "square.and.arrow.down",
+            "color" : "#60C172"
+          }
+        },
+        {
+          "uuid" : "F29D69E1-61AB-45A0-813A-9B67DAC36F9D",
+          "name" : "Concat HTML Docs",
+          "icon" : {
+            "glyph" : "wand.and.stars",
+            "color" : "#FE824B"
+          }
+        },
+        {
+          "uuid" : "7400DC69-CFEA-4035-862E-24FC7C14FD8D",
+          "name" : "Things",
+          "icon" : {
+            "glyph" : "checkmark.square",
+            "color" : "#3FA1F8"
+          }
+        },
+        {
+          "uuid" : "5E96CBBC-AB5A-4DE6-A376-C5ADA55F651A",
+          "name" : "FUCKING AROUND",
+          "icon" : {
+            "glyph" : "heart.slash.circle.fill",
+            "color" : "#FB6666"
+          }
+        },
+        {
+          "uuid" : "0920C6B4-261D-4B7C-B6F8-65507D019C08",
+          "name" : "Hello, World!",
+          "icon" : {
+            "glyph" : "hand.raised",
+            "color" : "#FB6666"
+          }
+        },
+        {
+          "uuid" : "308C7179-18A6-4F8A-9D71-E31BC808A7F2",
+          "name" : "Open All URLs",
+          "icon" : {
+            "glyph" : "link.circle.fill",
+            "color" : "#FE824B"
+          }
+        }
+      ],
+      "name" : "Dev",
+      "icon" : "rectangle.and.paperclip"
+    }
+  ]
+}

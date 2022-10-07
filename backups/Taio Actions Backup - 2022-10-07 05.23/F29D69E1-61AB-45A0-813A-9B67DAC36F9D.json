@@ -1,0 +1,14 @@
+{
+  "actions" : [
+
+  ],
+  "buildVersion" : 1,
+  "name" : "Concat HTML Docs",
+  "clientMinVersion" : 1,
+  "summary" : "",
+  "icon" : {
+    "glyph" : "wand.and.stars",
+    "color" : "#FE824B"
+  },
+  "clientVersion" : 1024
+}

@@ -1,0 +1,32 @@
+{
+  "actions" : [
+    {
+      "type" : "@util.set-clipboard",
+      "parameters" : {
+        "mode" : 0,
+        "localOnly" : false,
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.full-text"
+            }
+          ]
+        },
+        "expireAfter" : {
+          "value" : "0"
+        }
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Copy Document Text",
+  "clientMinVersion" : 1,
+  "summary" : "",
+  "icon" : {
+    "glyph" : "wand.and.stars",
+    "color" : "#60C172"
+  },
+  "clientVersion" : 1176
+}

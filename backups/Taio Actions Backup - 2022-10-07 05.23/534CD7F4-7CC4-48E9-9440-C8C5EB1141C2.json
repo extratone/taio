@@ -1,0 +1,45 @@
+{
+  "actions" : [
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "Generate a TODO list file under the current folder."
+        }
+      }
+    },
+    {
+      "type" : "@editor.new",
+      "parameters" : {
+        "location" : 0,
+        "openInEditor" : true,
+        "filename" : {
+          "value" : "My Todo List.md"
+        },
+        "text" : {
+          "value" : "## TODO\n\n- [ ] $\n- [ ] $\n- [ ] ",
+          "tokens" : [
+            {
+              "location" : 23,
+              "value" : "@date.format(MMddYYYY-HHmmss)"
+            },
+            {
+              "location" : 15,
+              "value" : "@cursor"
+            }
+          ]
+        },
+        "overwriteIfExists" : false
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "My Todo List",
+  "clientMinVersion" : 1,
+  "summary" : "",
+  "icon" : {
+    "glyph" : "list.bullet.rectangle",
+    "color" : "#FFB000"
+  },
+  "clientVersion" : 1046
+}

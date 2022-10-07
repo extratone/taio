@@ -1,0 +1,295 @@
+{
+  "actions" : [
+    {
+      "type" : "@editor.get-text",
+      "parameters" : {
+        "location" : 0,
+        "fallback" : 0,
+        "filename" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.file-name"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@flow.set-variable",
+      "parameters" : {
+        "value" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.selection-location"
+            }
+          ]
+        },
+        "name" : {
+          "value" : "Current Location"
+        }
+      }
+    },
+    {
+      "type" : "@flow.set-variable",
+      "parameters" : {
+        "value" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.selection-length"
+            }
+          ]
+        },
+        "name" : {
+          "value" : "Current Length"
+        }
+      }
+    },
+    {
+      "type" : "@ui.text-input",
+      "parameters" : {
+        "prompt" : {
+          "value" : "Add a Footnote Title"
+        },
+        "keyboardType" : 0,
+        "initialText" : {
+          "value" : ""
+        },
+        "singleLineText" : true
+      }
+    },
+    {
+      "type" : "@flow.set-variable",
+      "parameters" : {
+        "value" : {
+          "value" : "[^$]",
+          "tokens" : [
+            {
+              "location" : 2,
+              "value" : "@input"
+            }
+          ]
+        },
+        "name" : {
+          "value" : "Footnote Label"
+        }
+      }
+    },
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "Check if the footnote label already exists in the document or not"
+        }
+      }
+    },
+    {
+      "type" : "@flow.if",
+      "parameters" : {
+        "blockIdentifier" : "609D7BED-23CF-49FF-9DBB-D134F0C252BE",
+        "condition" : 3,
+        "rhs" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "Footnote Label"
+            }
+          ]
+        },
+        "lhs" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.full-text"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@ui.text-input",
+      "parameters" : {
+        "prompt" : {
+          "value" : "Enter Footnote Text"
+        },
+        "keyboardType" : 0,
+        "initialText" : {
+          "value" : ""
+        },
+        "singleLineText" : false
+      }
+    },
+    {
+      "type" : "@flow.set-variable",
+      "parameters" : {
+        "value" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        },
+        "name" : {
+          "value" : "Footnote Text"
+        }
+      }
+    },
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "Workaround to scroll to the end of the document before adding a line break and the footnote itself"
+        }
+      }
+    },
+    {
+      "type" : "@editor.move-cursor",
+      "parameters" : {
+        "numberOfChars" : {
+          "value" : "1000000000"
+        },
+        "direction" : 1,
+        "unit" : 2
+      }
+    },
+    {
+      "type" : "@editor.replace-selected",
+      "parameters" : {
+        "text" : {
+          "value" : "\n\n$: $",
+          "tokens" : [
+            {
+              "location" : 5,
+              "value" : "Footnote Text"
+            },
+            {
+              "location" : 2,
+              "value" : "Footnote Label"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@editor.select-range",
+      "parameters" : {
+        "location" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "Current Location"
+            }
+          ]
+        },
+        "length" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "Current Length"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@editor.replace-selected",
+      "parameters" : {
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "Footnote Label"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@flow.else",
+      "parameters" : {
+        "blockIdentifier" : "609D7BED-23CF-49FF-9DBB-D134F0C252BE"
+      }
+    },
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "Ask to pick a different footnote label instead"
+        }
+      }
+    },
+    {
+      "type" : "@ui.alert",
+      "parameters" : {
+        "showCancelButton" : true,
+        "message" : {
+          "value" : "Pick a different footnote label and run this action again."
+        },
+        "title" : {
+          "value" : "Footnote Label Already In Use"
+        },
+        "actions" : [
+          {
+            "title" : {
+              "value" : ""
+            },
+            "value" : {
+              "value" : "0"
+            }
+          },
+          {
+            "title" : {
+              "value" : ""
+            },
+            "value" : {
+              "value" : "1"
+            }
+          },
+          {
+            "title" : {
+              "value" : ""
+            },
+            "value" : {
+              "value" : "2"
+            }
+          },
+          {
+            "title" : {
+              "value" : ""
+            },
+            "value" : {
+              "value" : "3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type" : "@flow.endif",
+      "parameters" : {
+        "blockIdentifier" : "609D7BED-23CF-49FF-9DBB-D134F0C252BE"
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Add Footnote",
+  "clientMinVersion" : 1,
+  "summary" : "Add a MultiMarkdown footnote to the bottom of the document, then scroll back to the cursor's original position in the editor.",
+  "icon" : {
+    "glyph" : "chevron.compact.down",
+    "color" : "#FE824B"
+  },
+  "clientVersion" : 234
+}

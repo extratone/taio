@@ -1,0 +1,29 @@
+{
+  "actions" : [
+    {
+      "type" : "@util.open-url",
+      "parameters" : {
+        "url" : {
+          "value" : "bear:\/\/x-callback-url\/grab-url?url=$&tags=capture",
+          "tokens" : [
+            {
+              "location" : 35,
+              "value" : "@editor.selection-text"
+            }
+          ]
+        },
+        "fullScreen" : false,
+        "browser" : 0
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Capture with Bear",
+  "clientMinVersion" : 1,
+  "summary" : "Capture the content at the currently-selected URL with Bear, tagged “capture.”",
+  "icon" : {
+    "glyph" : "square.and.arrow.down.fill",
+    "color" : "#FB6666"
+  },
+  "clientVersion" : 842
+}

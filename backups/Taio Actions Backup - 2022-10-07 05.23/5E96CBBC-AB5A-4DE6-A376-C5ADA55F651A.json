@@ -1,0 +1,105 @@
+{
+  "actions" : [
+    {
+      "type" : "@ui.render-html",
+      "parameters" : {
+        "showsProgress" : true,
+        "title" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.file-name"
+            }
+          ]
+        },
+        "fullScreen" : false,
+        "html" : {
+          "value" : "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<\/head>\n<body style='font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";'>\n  $\n<\/body>\n<\/html>",
+          "tokens" : [
+            {
+              "location" : 301,
+              "value" : "@editor.full-text"
+            }
+          ]
+        },
+        "opaque" : true
+      }
+    },
+    {
+      "type" : "@share.compose-message",
+      "parameters" : {
+        "body" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.full-text"
+            }
+          ]
+        },
+        "recipients" : {
+          "value" : "+15738264160"
+        }
+      }
+    },
+    {
+      "type" : "@ui.toast",
+      "parameters" : {
+        "style" : 0,
+        "waitUntilDone" : false,
+        "title" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@text.tokenize",
+      "parameters" : {
+        "includePunctuations" : false,
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@text.index-of",
+      "parameters" : {
+        "mode" : 0,
+        "pattern" : {
+          "value" : ""
+        },
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "FUCKING AROUND",
+  "clientMinVersion" : 1,
+  "summary" : "",
+  "icon" : {
+    "glyph" : "heart.slash.circle.fill",
+    "color" : "#FB6666"
+  },
+  "clientVersion" : 2
+}

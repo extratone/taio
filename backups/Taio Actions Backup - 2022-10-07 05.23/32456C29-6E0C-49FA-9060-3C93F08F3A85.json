@@ -1,0 +1,60 @@
+{
+  "actions" : [
+    {
+      "type" : "@editor.get-text",
+      "parameters" : {
+        "location" : 0,
+        "fallback" : 0,
+        "filename" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.file-name"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@text.count",
+      "parameters" : {
+        "mode" : 1,
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@ui.toast",
+      "parameters" : {
+        "style" : 0,
+        "waitUntilDone" : false,
+        "title" : {
+          "value" : "$ words",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Count Words",
+  "clientMinVersion" : 1,
+  "summary" : "Count words in the current document and display them in an alert.",
+  "icon" : {
+    "glyph" : "textformat.123",
+    "color" : "#E09971"
+  },
+  "clientVersion" : 234
+}

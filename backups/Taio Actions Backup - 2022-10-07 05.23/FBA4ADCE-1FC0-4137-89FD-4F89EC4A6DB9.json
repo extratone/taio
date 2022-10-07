@@ -1,0 +1,145 @@
+{
+  "actions" : [
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "Match the closest footnote indicator. This works by placing the cursor inside square brackets of the footnote marker"
+        }
+      }
+    },
+    {
+      "type" : "@editor.smart-select",
+      "parameters" : {
+        "mode" : 0
+      }
+    },
+    {
+      "type" : "@flow.set-variable",
+      "parameters" : {
+        "value" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        },
+        "name" : {
+          "value" : "Footnote Name"
+        }
+      }
+    },
+    {
+      "type" : "@editor.get-text",
+      "parameters" : {
+        "location" : 0,
+        "fallback" : 0,
+        "filename" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.file-name"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "Find the footnote marker + actual text elsewhere in the document"
+        }
+      }
+    },
+    {
+      "type" : "@text.filter",
+      "parameters" : {
+        "mode" : 4,
+        "pattern" : {
+          "value" : "^\\[\\^$\\]\\:\\s.+",
+          "tokens" : [
+            {
+              "location" : 5,
+              "value" : "Footnote Name"
+            }
+          ]
+        },
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        },
+        "multiLineRegex" : true
+      }
+    },
+    {
+      "type" : "@ui.alert",
+      "parameters" : {
+        "showCancelButton" : true,
+        "message" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        },
+        "title" : {
+          "value" : "Footnote Text"
+        },
+        "actions" : [
+          {
+            "title" : {
+              "value" : ""
+            },
+            "value" : {
+              "value" : "0"
+            }
+          },
+          {
+            "title" : {
+              "value" : ""
+            },
+            "value" : {
+              "value" : "1"
+            }
+          },
+          {
+            "title" : {
+              "value" : ""
+            },
+            "value" : {
+              "value" : "2"
+            }
+          },
+          {
+            "title" : {
+              "value" : ""
+            },
+            "value" : {
+              "value" : "3"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Lookup Footnote",
+  "clientMinVersion" : 1,
+  "summary" : "Lookup the contents of an existing footnote by automatically selecting the footnote anchor in the current document. For the action to work, the cursor has to be placed inside the square brackets of the footnote indicator.",
+  "icon" : {
+    "glyph" : "quote.bubble",
+    "color" : "#7881FA"
+  },
+  "clientVersion" : 234
+}

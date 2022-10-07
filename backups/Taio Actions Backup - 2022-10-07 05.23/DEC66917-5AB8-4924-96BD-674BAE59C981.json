@@ -1,0 +1,35 @@
+{
+  "actions" : [
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "Create a plain text file with the .txt file extension."
+        }
+      }
+    },
+    {
+      "type" : "@editor.new",
+      "parameters" : {
+        "location" : 0,
+        "openInEditor" : true,
+        "filename" : {
+          "value" : "Untitled.txt"
+        },
+        "text" : {
+          "value" : ""
+        },
+        "overwriteIfExists" : false
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Untitled.txt",
+  "clientMinVersion" : 1,
+  "summary" : "",
+  "icon" : {
+    "glyph" : "doc.plaintext",
+    "color" : "#A777FF"
+  },
+  "clientVersion" : 1046
+}

@@ -1,0 +1,67 @@
+{
+  "actions" : [
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "\/\/ Hello, World"
+        }
+      }
+    },
+    {
+      "type" : "@ui.alert",
+      "parameters" : {
+        "showCancelButton" : false,
+        "message" : {
+          "value" : "░͓̝͓̯̩J̪░̮̻̘͖ͅU̶̲͙̰̘̖̮̟░̶͖I̩̠̩̲░̱L̶̻̗̗͉̻̻̻░̘̦̞̭͔̬͕͠Ĺ̦̭░̡I̶░̸̠A͔̯̞̕░̯̘̭̟͕͜R̹̖̣̲̪̭͡░͟D̠͕̗̼͚̀░ ░J░U░I░L░L░I░A░R░D░"
+        },
+        "title" : {
+          "value" : "Hello, World!"
+        },
+        "actions" : [
+          {
+            "title" : {
+              "value" : "OK"
+            },
+            "value" : {
+              "value" : "OK"
+            }
+          },
+          {
+            "title" : {
+              "value" : ""
+            },
+            "value" : {
+              "value" : "1"
+            }
+          },
+          {
+            "title" : {
+              "value" : ""
+            },
+            "value" : {
+              "value" : "2"
+            }
+          },
+          {
+            "title" : {
+              "value" : ""
+            },
+            "value" : {
+              "value" : "3"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Hello, World!",
+  "clientMinVersion" : 1,
+  "summary" : "",
+  "icon" : {
+    "glyph" : "hand.raised",
+    "color" : "#FB6666"
+  },
+  "clientVersion" : 2
+}

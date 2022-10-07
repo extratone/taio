@@ -1,0 +1,43 @@
+{
+  "actions" : [
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "Quickly insert personal information, such as calendar events, location, and contacts."
+        }
+      }
+    },
+    {
+      "type" : "@flow.javascript",
+      "parameters" : {
+        "script" : {
+          "value" : "$ui.render({\n  props: {\n    title: \"Content Helper\"\n  },\n  views: [\n    {\n      type: \"list\",\n      props: {\n        style: 2,\n        data: [\n          \"Insert Contact\",\n          \"Insert Calendar\",\n          \"Insert Location\",\n        ]\n      },\n      layout: $layout.fill,\n      events: {\n        didSelect: (_, indexPath, name) => {\n          const index = indexPath.row;\n          if (index == 0) {\n            insertContact();\n          } else if (index == 1) {\n            insertCalendar();\n          } else if (index == 2) {\n            insertLocation();\n          }\n        }\n      }\n    }\n  ]\n});\n\nasync function insertContact() {\n  const contact = await $contact.pick();\n  if (contact) {\n    resolve(`You can reach out to \"${contact.givenName}\" for more information.`);\n  }\n}\n\nasync function insertCalendar() {\n  const { events } = await $calendar.fetch({\n    startDate: new Date(),\n    hours: 14 * 24,\n  });\n  \n  if (events.length == 0) {\n    alert(\"No events\");\n    return;\n  }\n  \n  resolve(`I have ${events.length} ${events.length == 1 ? \"meeting\" : \"meetings\"} in next two weeks, the upcoming one is \"${events[0].title}\".`);\n}\n\nasync function insertLocation() {\n  const location = await $location.select();\n  if (location) {\n    resolve(`You can find my location at https:\/\/www.google.com\/maps\/search\/${location.lat},${location.lng}`);\n  }\n}\n\nfunction resolve(text) {\n  $actions.resolve(text);\n  $app.close();\n}"
+        }
+      }
+    },
+    {
+      "type" : "@editor.replace-selected",
+      "parameters" : {
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Content Helper",
+  "clientMinVersion" : 1,
+  "summary" : "",
+  "icon" : {
+    "glyph" : "person",
+    "color" : "#10ADC0"
+  },
+  "clientVersion" : 402
+}

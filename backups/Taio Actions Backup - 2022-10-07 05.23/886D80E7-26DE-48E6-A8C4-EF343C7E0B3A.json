@@ -1,0 +1,55 @@
+{
+  "actions" : [
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "Clear clipboard (set to empty text)."
+        }
+      }
+    },
+    {
+      "type" : "@text",
+      "parameters" : {
+        "text" : {
+          "value" : ""
+        }
+      }
+    },
+    {
+      "type" : "@util.set-clipboard",
+      "parameters" : {
+        "mode" : 0,
+        "localOnly" : true,
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@ui.toast",
+      "parameters" : {
+        "style" : 1,
+        "waitUntilDone" : false,
+        "title" : {
+          "value" : "Cleared"
+        }
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Clear Clipboard",
+  "clientMinVersion" : 1,
+  "summary" : "Clears the system clipboard by copying nothing.",
+  "icon" : {
+    "glyph" : "arrow.triangle.2.circlepath.doc.on.clipboard",
+    "color" : "#60C172"
+  },
+  "clientVersion" : 2
+}
