@@ -1,0 +1,39 @@
+{
+  "actions" : [
+    {
+      "type" : "@editor.new",
+      "parameters" : {
+        "location" : 2,
+        "openInEditor" : true,
+        "filename" : {
+          "value" : "$.md",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@date.format(MMddYYYY-HHmmss)"
+            }
+          ]
+        },
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@clipboard.text"
+            }
+          ]
+        },
+        "overwriteIfExists" : false
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "New With Clipboard",
+  "clientMinVersion" : 1,
+  "summary" : "Creates and opens a new .md document titled by DavodTime with the contents of the system clipboard at the root of the iCloud Drive folder.",
+  "icon" : {
+    "glyph" : "doc.on.clipboard",
+    "color" : "#60C172"
+  },
+  "clientVersion" : 1082
+}
