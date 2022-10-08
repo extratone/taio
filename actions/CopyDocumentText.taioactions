@@ -1,0 +1,42 @@
+{
+  "actions" : [
+    {
+      "type" : "@util.set-clipboard",
+      "parameters" : {
+        "mode" : 0,
+        "localOnly" : false,
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.full-text"
+            }
+          ]
+        },
+        "expireAfter" : {
+          "value" : "0"
+        }
+      }
+    },
+    {
+      "type" : "@ui.toast",
+      "parameters" : {
+        "style" : 1,
+        "waitUntilDone" : true,
+        "title" : {
+          "value" : "Document Copied"
+        }
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Copy Document Text",
+  "clientMinVersion" : 1,
+  "summary" : "Copies the entirety of the currently open document's text content to the system clipboard.",
+  "icon" : {
+    "glyph" : "doc.on.clipboard.fill",
+    "color" : "#E09971"
+  },
+  "clientVersion" : 1176
+}
