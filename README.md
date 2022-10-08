@@ -84,6 +84,17 @@ Post to a [Write.as](https://write.as/join/4bqc8482) blog (“[collection](https
 
 ---
 
+## Action Development
+
+You'll find some as-yet-officially-submitted .taioactions files in the [actions directory](https://github.com/extratone/taio/tree/main/actions). Here's a brief index with hyperlinks to the raw file download URL for install:
+
+- [**Capture With Bear**](https://github.com/extratone/taio/raw/main/actions/CapturewithBear.taioactions)
+- [**Copy Document Text**](https://github.com/extratone/taio/raw/main/actions/CopyDocumentText.taioactions)
+- [Create Gist](https://github.com/extratone/taio/raw/main/actions/CreateGist.taioactions) (Not functioning yet, sorry!)
+- [**New With Clipboard**](https://github.com/extratone/taio/raw/main/actions/NewWithClipboard.taioactions)
+- [**Telegram Saved Messages**](https://github.com/extratone/taio/raw/main/actions/TelegramSavedMessages.taioactions)
+- [**Things**](https://github.com/extratone/taio/raw/main/actions/Things.taioactions)
+
 ### Contact
 
 * [Contact Card](https://davidblue.wtf/db.vcf)
