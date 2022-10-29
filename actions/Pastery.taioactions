@@ -1,10 +1,70 @@
 {
   "actions" : [
     {
+      "type" : "@ui.text-input",
+      "parameters" : {
+        "prompt" : {
+          "value" : "Set a lifespan for the output paste in minutes. (Default value is 20 years.)"
+        },
+        "keyboardType" : 2,
+        "initialText" : {
+          "value" : "10512000"
+        },
+        "singleLineText" : true
+      }
+    },
+    {
       "type" : "@flow.set-variable",
       "parameters" : {
         "value" : {
-          "value" : "{{YOURAPIKEY}}"
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        },
+        "name" : {
+          "value" : "life"
+        }
+      }
+    },
+    {
+      "type" : "@ui.menu",
+      "parameters" : {
+        "prompt" : {
+          "value" : "Select a language."
+        },
+        "selectAllByDefault" : false,
+        "multiValue" : false,
+        "lines" : {
+          "value" : "autodetect\nbash\nc\ncpp\ncsharp\ncss\nhtml\njava\njs\njson\nlua\nmarkdown\nobjective-c\nperl\nphp\npython\nswift\ntext\nautodetect\nabap\nada\nagda\nahk\nalloy\nantlr\nantlr-as\nantlr-cpp\nantlr-csharp\nantlr-java\nantlr-objc\nantlr-perl\nantlr-python\nantlr-ruby\napacheconf\napl\napplescript\nas\nas3\naspectj\naspx-cs\naspx-vb\nasy\nat\nautoit\nawk\nbasemake\nbat\nbbcode\nbefunge\nblitzbasic\nblitzmax\nboo\nbrainfuck\nbro\nbugs\nc-objdump\nca65\ncbmbas\nceylon\ncfc\ncfengine3\ncfm\ncfs\nchai\nchapel\ncheetah\ncirru\nclay\nclojure\nclojurescript\ncmake\ncobol\ncobolfree\ncoffee-script\ncommon-lisp\nconsole\ncontrol\ncoq\ncpp-objdump\ncroc\ncryptol\ncss+django\ncss+erb\ncss+genshitext\ncss+lasso\ncss+mako\ncss+mozpreproc\ncss+myghty\ncss+php\ncss+smarty\ncucumber\ncuda\ncypher\ncython\nd\nd-objdump\ndart\ndelphi\ndg\ndiff\ndjango\ndocker\ndpatch\ndtd\nduel\ndylan\ndylan-console\ndylan-lid\nebnf\nec\necl\neiffel\nelixir\nerb\nerl\nerlang\nevoque\nfactor\nfan\nfancy\nfelix\nfortran\nfoxpro\nfsharp\ngap\ngas\ngenshi\ngenshitext\nglsl\ngnuplot\ngo\ngolo\ngooddata-cl\ngosu\ngroff\ngroovy\ngst\nhaml\nhandlebars\nhaskell\nhaxeml\nhtml+cheetah\nhtml+django\nhtml+evoque\nhtml+genshi\nhtml+handlebars\nhtml+lasso\nhtml+mako\nhtml+myghty\nhtml+php\nhtml+smarty\nhtml+twig\nhtml+velocity\nhttp\nhx\nhybris\nhylang\ni6t\nidl\nidris\niex\nigor\ninform6\ninform7\nini\nio\nioke\nipython2\nipython3\nipythonconsole\nirc\nisabelle\njade\njags\njasmin\njavascript+mozpreproc\njlcon\njs+cheetah\njs+django\njs+erb\njs+genshitext\njs+lasso\njs+mako\njs+myghty\njs+php\njs+smarty\njsonld\njsp\njulia\nkal\nkconfig\nkoka\nkotlin\nlagda\nlasso\nlcry\nlean\nlhs\nlidr\nlighty\nlimbo\nliquid\nlive-script\nllvm\nlogos\nlogtalk\nlsl\nmake\nmako\nmaql\nmask\nmason\nmathematica\nmatlab\nmatlabsession\nminid\nmodelica\nmodula2\nmonkey\nmoocode\nmoon\nmozhashpreproc\nmozpercentpreproc\nmql\nmscgen\nmupad\nmxml\nmyghty\nmysql\nnasm\nnemerle\nnesc\nnewlisp\nnewspeak\nnginx\nnimrod\nnit\nnixos\nnsis\nnumpy\nobjdump\nobjdump-nasm\nobjective-c++\nobjective-j\nocaml\noctave\nooc\nopa\nopenedge\npan\npawn\nperl6\npig\npike\nplpgsql\npostgresql\npostscript\npot\npov\npowershell\nprolog\nproperties\nprotobuf\npsql\npuppet\npy3tb\npycon\npypylog\npytb\npython3\nqbasic\nqml\nracket\nragel\nragel-c\nragel-cpp\nragel-d\nragel-em\nragel-java\nragel-objc\nragel-ruby\nraw\nrb\nrbcon\nrconsole\nrd\nrebol\nred\nredcode\nregistry\nresource\nrexx\nrhtml\nrobotframework\nrql\nrsl\nrst\nrust\nsass\nscala\nscaml\nscheme\nscilab\nscss\nshell-session\nslim\nsmali\nsmalltalk\nsmarty\nsml\nsnobol\nsourceslist\nsp\nsparql\nspec\nsplus\nsql\nsqlite3\nsquidconf\nssp\nstan\nswig\nsystemverilog\ntads3\ntcl\ntcsh\ntea\ntex\ntextile\ntodotxt\ntrac-wiki\ntreetop\nts\ntwig\nurbiscript\nvala\nvb.net\nvctreestatus\nvelocity\nverilog\nvgl\nvhdl\nvim\nxml\nxml+cheetah\nxml+django\nxml+erb\nxml+evoque\nxml+lasso\nxml+mako\nxml+myghty\nxml+php\nxml+smarty\nxml+velocity\nxquery\nxslt\nxtend\nxul+mozpreproc\nyaml\nyaml+jinja\nzephir"
+        }
+      }
+    },
+    {
+      "type" : "@flow.set-variable",
+      "parameters" : {
+        "value" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        },
+        "name" : {
+          "value" : "lang"
+        }
+      }
+    },
+    {
+      "type" : "@flow.set-variable",
+      "parameters" : {
+        "value" : {
+          "value" : "00000000000000000000000000000000"
         },
         "name" : {
           "value" : "apikey"
@@ -99,8 +159,16 @@
           ]
         },
         "url" : {
-          "value" : "https:\/\/www.pastery.net\/api\/paste\/?title=$&api_key=$&language=markdown",
+          "value" : "https:\/\/www.pastery.net\/api\/paste\/?title=$&api_key=$&language=$&duration=$",
           "tokens" : [
+            {
+              "location" : 73,
+              "value" : "life"
+            },
+            {
+              "location" : 62,
+              "value" : "lang"
+            },
             {
               "location" : 51,
               "value" : "apikey"
