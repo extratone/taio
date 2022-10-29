@@ -2,7 +2,7 @@
 Updated `10122022-091754`
 
 - [**Action File**](https://davidblue.wtf/taio/Pastery.taioactions)
-- [GitHub Issue](https://github.com/extratone/drafts/issues/18)
+- [GitHub Issue](https://github.com/extratone/taio/issues/18)
 - [**Paste**](https://www.pastery.net/zhnzzj)
 - [JSON Paste](https://www.pastery.net/kpebej)
 - [Repository Action File](https://github.com/extratone/taio/blob/main/actions/Pastery.taioactions)
@@ -54,7 +54,7 @@ Create a Pastery paste via API with the current document's contents. At run, you
 ## Video Demo
 
 <video controls width="520" height=auto>
-  <source src="https://user-images.githubusercontent.com/43663476/195356023-5872afa1-23fb-4fdd-bcb5-2e424ca78a16.MOV">
+  <source src="https://user-images.githubusercontent.com/43663476/198829204-631db664-f411-4194-940e-a091fdd32986.MOV">
 </video>
 
 - [Raw File](https://user-images.githubusercontent.com/43663476/195356023-5872afa1-23fb-4fdd-bcb5-2e424ca78a16.MOV)
