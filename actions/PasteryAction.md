@@ -34,6 +34,9 @@ Another simple API action for @TaioApp... This time, for *the greatest pastebin 
 
 <script>(function(d, s, id) {var js, pastejs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src ='https://www.pastery.net/static/js/embed.js';pastejs.parentNode.insertBefore(js, pastejs);}(document, 'script', 'pastery-jssdk'));</script><div class='paste-list' data-pasteid='zhnzzj'></div>
 
+## Submission
+
+- [Airtable Automated Response](message:%3C20221029114010.219e9cb19df74f19@airtable.com%3E)
 
 ## Description
 
@@ -54,10 +57,10 @@ Create a Pastery paste via API with the current document's contents. At run, you
 ## Video Demo
 
 <video controls width="520" height=auto>
-  <source src="https://user-images.githubusercontent.com/43663476/198829204-631db664-f411-4194-940e-a091fdd32986.MOV">
+  <source src="video/PasteryActionDemo.MP4">
 </video>
 
-- [Raw File](https://user-images.githubusercontent.com/43663476/195356023-5872afa1-23fb-4fdd-bcb5-2e424ca78a16.MOV)
+- [Raw File](video/PasteryActionDemo.MP4)
 - [Twitter Media Studio](https://studio.twitter.com/library/13_1580195391965904899)
 - [YouTube](https://youtu.be/5GBe2jL5PEI)
 
