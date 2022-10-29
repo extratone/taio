@@ -43,6 +43,14 @@ You'll need to change the value of the `apikey` variable to your own Pastery API
 
 See Pastery's API documentation: https://www.pastery.net/api
 
+## Directory Description
+
+Create a Pastery paste via API with the current document's contents. At run, you'll be prompted to set the `duration` parameter of the call in minutes. The default value (`10512000`) equates to 20 years. You'll also be prompted to select a syntax highlighting language from [Pastery's official supported list](clippings/pasterylang.md). The result's URL will be passed to the system clipboard.
+
+**Please note**: Before running this action, you'll need to change the value of the `apikey` variable to your own Pastery API key.
+
+*See [Pastery's API documentation](https://www.pastery.net/api)*
+
 ## Video Demo
 
 <video controls width="520" height=auto>
