@@ -1,0 +1,83 @@
+{
+  "actions" : [
+    {
+      "type" : "@editor.get-text",
+      "parameters" : {
+        "location" : 0,
+        "fallback" : 0,
+        "filename" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.file-name"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@text.dedupe",
+      "parameters" : {
+        "lines" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@text.sort",
+      "parameters" : {
+        "mode" : 1,
+        "lines" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@editor.set-text",
+      "parameters" : {
+        "createIfNotExists" : false,
+        "location" : 0,
+        "filename" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@editor.file-name"
+            }
+          ]
+        },
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "Deduplicate & Sort",
+  "clientMinVersion" : 1,
+  "summary" : "Remove duplicate lines and sort.",
+  "icon" : {
+    "glyph" : "cursorarrow.motionlines",
+    "color" : "#E09971"
+  },
+  "clientVersion" : 1222
+}
