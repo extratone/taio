@@ -95,7 +95,7 @@
   "buildVersion" : 1,
   "name" : "Clippings Backup",
   "clientMinVersion" : 1,
-  "summary" : "Backs up all clippings content in a single file at [iCloud Storage]\/clippings.md.",
+  "summary" : "Backs up all clippings content - merged in a single text file - at [iCloud Storage]\/clippings.md.",
   "icon" : {
     "glyph" : "externaldrive.badge.checkmark",
     "color" : "#10ADC0"
