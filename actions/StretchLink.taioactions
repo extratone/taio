@@ -1,0 +1,171 @@
+{
+  "actions" : [
+    {
+      "type" : "@editor.selected-text",
+      "parameters" : {
+        "fallback" : 0
+      }
+    },
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "We store the selected short URL in a new variable `in` for convenience."
+        }
+      }
+    },
+    {
+      "type" : "@flow.set-variable",
+      "parameters" : {
+        "value" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        },
+        "name" : {
+          "value" : "in"
+        }
+      }
+    },
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "The API request is configured to only return the expanded URL as plain text rather than JSON with metadata."
+        }
+      }
+    },
+    {
+      "type" : "@util.request",
+      "parameters" : {
+        "body" : {
+          "value" : ""
+        },
+        "url" : {
+          "value" : "https:\/\/stretchlink.cc\/api\/1\/?url=$&output=text&clean=true&include_title=false",
+          "tokens" : [
+            {
+              "location" : 34,
+              "value" : "in"
+            }
+          ]
+        },
+        "method" : 0,
+        "headers" : {
+          "value" : "{\n  \"Content-Type\": \"application\/json\"\n}"
+        }
+      }
+    },
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "We store the expanded URL request result in a new variable `out` for convenience."
+        }
+      }
+    },
+    {
+      "type" : "@flow.set-variable",
+      "parameters" : {
+        "value" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "@input"
+            }
+          ]
+        },
+        "name" : {
+          "value" : "out"
+        }
+      }
+    },
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "A visual \"toast\" displays the output value of the http request so that we can determine if it functioned correctly."
+        }
+      }
+    },
+    {
+      "type" : "@ui.toast",
+      "parameters" : {
+        "style" : 1,
+        "waitUntilDone" : false,
+        "title" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "out"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "In case of unexpected results, we stash the original selected short URL on the system clipboard."
+        }
+      }
+    },
+    {
+      "type" : "@util.set-clipboard",
+      "parameters" : {
+        "mode" : 0,
+        "localOnly" : false,
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "in"
+            }
+          ]
+        },
+        "expireAfter" : {
+          "value" : "0"
+        }
+      }
+    },
+    {
+      "type" : "@comment",
+      "parameters" : {
+        "text" : {
+          "value" : "The selected short URL is replaced with the result: its expanded equivalent."
+        }
+      }
+    },
+    {
+      "type" : "@editor.replace-selected",
+      "parameters" : {
+        "text" : {
+          "value" : "$",
+          "tokens" : [
+            {
+              "location" : 0,
+              "value" : "out"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "buildVersion" : 1,
+  "name" : "StretchLink",
+  "clientMinVersion" : 1,
+  "summary" : "Uses Brett Terpstra's StretchLink API to expanded selected short URLs and replace said selection with its full URL equivalent. The original short URL is stashed by way of replacing the system clipboard contents in case of unexpected results.",
+  "icon" : {
+    "glyph" : "rectangle.expand.vertical",
+    "color" : "#10ADC0"
+  },
+  "clientVersion" : 1222
+}
